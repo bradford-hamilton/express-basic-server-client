@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" type='text/css' href="style.css">
+  </head>
+  <body>
+
+    <h1>This page makes a 'GET' request to my other app "basic-express-server." The route on the server app sends
+      the html file and logs that to the console on client.<h1>
+    <h2>Then below you can make a 'POST' request and send over any name and the response will send back the name
+    on a blank page.</h2>
+
+    <form action="http://localhost:1337" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name" placeholder="Type name here">
+      <input type="submit" value="Submit Name">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src='script.js'></script>
+  </body>
+</html>
